@@ -11,6 +11,9 @@
     --CorVerdade: #6AB28D;
     --CorReforcos: #E7C7A0;
 }
+html{
+    overflow-x: hidden;
+}
 body {
     background-color: white;
     height: 100%;
