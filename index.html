@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INNPELE</title>
     <link rel="stylesheet" href="./src/styles/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -17,10 +18,10 @@
     </main>
     <section id="sobre">
         <div class="container">
-            <div class="esq">
+            <div class="esq" data-aos="fade-right">
                 <img src="./images/foto-sobre-innpele.webp" alt="Foto da Clínica">
             </div>
-            <div class="dir">
+            <div data-aos="fade-left" class="dir">
                 <h1>Por que escolher nossa <span>clínica?</span></h1>
                 <ul>
                     <li>
@@ -43,27 +44,27 @@
     <section id="servicos">
         <h1>Soluções Estéticas <span>Personalizadas</span></h1>
         <div class="container">
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <h2>Botox</h2>
                 <p>Diga adeus às linhas de expressão! Reduza rugas e tenha uma aparência mais jovem e revitalizada hoje mesmo. Resultados rápidos e duradouros!</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <h2>Queloides</h2>
                 <p>Livre-se dos quelóides com segurança! Elimine marcas indesejadas, melhore a aparência da pele e recupere sua confiança. Agende seu tratamento agora!</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <h2>Limpeza de Pele</h2>
                 <p>Diga adeus às linhas de expressão! Reduza rugas e tenha uma aparência mais jovem e revitalizada hoje mesmo. Resultados rápidos e duradouros!</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <h2>Clareamento de Glúteo</h2>
                 <p>Conquiste uma pele mais uniforme e iluminada! Tratamento especializado para clareamento eficaz e seguro. Transforme sua autoestima já!</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <h2>Remoção de Sinais</h2>
                 <p>Remova sinais e manchas de forma rápida e segura! Deixe sua pele uniforme e sem imperfeições. Agende sua consulta para uma pele impecável!</p>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <h2>Lipoenzimática</h2>
                 <p>Reduza medidas sem cirurgia! Tratamento não invasivo para definir seu corpo e alcançar a silhueta que você deseja. Resultados rápidos, sem complicações!</p>
             </div>
@@ -73,7 +74,7 @@
     <section id="mitos">
         <h1>Mitos e Verdades sobre Queloides</h1>
         <div class="container">
-            <div class="card">
+            <div data-aos="fade-right" class="card">
                 <div class="text">
                     <div>
                         <img src="./images/vector-mentira.webp" alt="Icone de mentira">
@@ -93,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left">
                 <div class="text">
                     <div>
                         <img src="./images/vector-verdade.webp" alt="Icone de verdade">
@@ -129,11 +130,11 @@
     <section id="recon">
         <h1>O Que Nossos Pacientes Estão Dizendo</h1>
         <div class="container">
-            <div class="card">
+            <div data-aos="fade-right" class="card">
                 <h3>“</h3>
                 <p>Conheci a clínica pelo Instagram e, sem hesitar, enviei uma mensagem para agendar meu procedimento. O atendimento foi incrível, super atencioso e profissional. Recomendo de olhos fechados!</p>
             </div>
-            <div class="card">
+            <div data-aos="fade-left" class="card">
                 <h3>“</h3>
                 <p>O trabalho foi incrível, e hoje sou muito grata por todo o cuidado e profissionalismo. Estou satisfeita com os resultados e sempre compartilho minha experiência com outras pessoas! Recomendo de coração!</p>
             </div>
@@ -208,7 +209,11 @@
             <p><a href="#">Desenvolvido por Antônio Pinheiro</a></p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+
+        AOS.init();
+
         document.querySelectorAll('.faq-question').forEach(item => {
     item.addEventListener('click', event => {
         const faqItem = item.parentElement;
@@ -236,7 +241,6 @@
         }
     });
 });
-
-    </script>
+</script>
 </body>
 </html>

@@ -11,7 +11,7 @@
     --CorVerdade: #6AB28D;
     --CorReforcos: #E7C7A0;
 }
-body, html {
+body {
     background-color: white;
     height: 100%;
     overflow-x: hidden;
@@ -841,7 +841,7 @@ footer .developed-by a {
 }
 @media (min-width: 576px) and (max-width: 767.98px){
     main {
-        background-image: url(../../images/background-mobile-innpele.jpg);
+        background-image: url(../../images/background-mobile-innpele.jp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
