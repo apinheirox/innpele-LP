@@ -212,15 +212,15 @@
         const faqItem = item.parentElement;
         const answer = faqItem.querySelector('.faq-answer');
 
-        if (!answer) return; // Verifica se a resposta existe
+        if (!answer) return;
 
         if (faqItem.classList.contains('open')) {
             answer.style.maxHeight = null;
             faqItem.classList.remove('open');
         } else {
-            // Fecha todas as outras FAQs
+            
             document.querySelectorAll('.faq-item').forEach(el => {
-                if (el !== faqItem) { // Certifica-se de não fechar o atual
+                if (el !== faqItem) {
                     el.classList.remove('open');
                     const otherAnswer = el.querySelector('.faq-answer');
                     if (otherAnswer) {
@@ -228,7 +228,7 @@
                     }
                 }
             });
-            // Abre o FAQ atual
+            
             answer.style.maxHeight = answer.scrollHeight + 'px';
             faqItem.classList.add('open');
         }

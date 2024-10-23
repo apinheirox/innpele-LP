@@ -11,6 +11,10 @@
     --CorVerdade: #6AB28D;
     --CorReforcos: #E7C7A0;
 }
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
 @font-face {
     font-family: 'Bold';
     src: url('../../fonts/Montserrat-Bold.woff') format('woff');
@@ -30,48 +34,9 @@
 span{
     font-family: 'Bold';
 }
-main {
-    background-image: url(../../images/background-innpele.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 85vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-main .text {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 1100px;
-    margin: 0 auto;
-    padding-left: 50px;
-    gap: 10px;
-}
-main .text h1{
-    width: 500px;
-    color: var(--CorPrincipal);
-    font-family: 'SemiBold';
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-main .text p{
-    width: 540px;
-    color: var(--CorSecundaria);
-    font-family: 'Regular';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
 .btn {
     display: inline-flex;
-    padding: 15px 20px;
+    padding: 17px 28px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -79,7 +44,7 @@ main .text p{
     background: var(--CorBotao);
     color: #FFF;
     font-family: 'SemiBold';
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     border: none;
     cursor: pointer;
@@ -99,12 +64,50 @@ main .text p{
     transform: translateY(0);
     box-shadow: 0 4px 10px rgba(53, 53, 53, 0.055);
 }
+main {
+    background-image: url(../../images/background-innpele.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+main .text {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1100px;
+    margin: 0 auto;
+    padding-left: 50px;
+    gap: 10px;
+}
+main .text h1{
+    width: 550px;
+    color: var(--CorPrincipal);
+    font-family: 'SemiBold';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+main .text p{
+    width: 540px;
+    color: var(--CorSecundaria);
+    font-family: 'Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
 main .text img{
     width: 160px;
 }
 #sobre{
-    height: 100dvh;
+    height: 95dvh;
     display: flex;
     align-items: center;
 }
@@ -124,7 +127,7 @@ main .text img{
 #sobre h1{
     color: var(--CorPrincipal);
     font-family: 'SemiBold';
-    font-size: 38px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -153,6 +156,7 @@ main .text img{
     gap: 20px;
     margin: 20px auto;
     margin-bottom: 50px;
+    height: 100dvh;
 }
 #servicos h1{
     color: var(--CorPrincipal);
@@ -217,7 +221,7 @@ main .text img{
     color: #6A4B3A;
     text-align: center;
     font-family: 'SemiBold';
-    font-size: 38px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -279,14 +283,14 @@ main .text img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px auto;
+    margin: 0 auto;
     height: 100dvh;
 }
 #resultados h1{
     color: var(--CorPrincipal);
     text-align: center;
     font-family: 'SemiBold';
-    font-size: 38px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -327,7 +331,7 @@ main .text img{
     color: #6A4B3A;
     text-align: center;
     font-family: 'SemiBold';
-    font-size: 38px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -388,7 +392,7 @@ main .text img{
     color: #6A4B3A;
     text-align: center;
     font-family: 'SemiBold';
-    font-size: 36px;
+    font-size: 38px;
     width: 800px;
     flex-shrink: 0;
     font-style: normal;
@@ -401,8 +405,7 @@ main .text img{
     justify-content: center;
     flex-direction: column;
     height: auto;
-    padding: 150px 20px;
-
+    margin: 0 auto;
 }
 
 #faq .faq {
@@ -427,7 +430,7 @@ main .text img{
     color: #6A4B3A;
     text-align: center;
     font-family: 'SemiBold';
-    font-size: 38px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -568,8 +571,527 @@ footer .developed-by a {
     text-decoration: none;
 }
 
-@media (max-width: 575.98px){}
-@media (min-width: 576px) and (max-width: 767.98px){}
+@media (max-width: 575.98px){
+    main {
+        background-image: url(../../images/background-mobile-innpele.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 100dvh;
+        padding: 20px;
+        padding-top: 150px;
+    }
+    main .text {
+        width: 100%;
+        padding-left: 0;
+        gap: 15px;
+        justify-content: end;
+        align-items: center;
+    }
+    main .text h1 {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+    main .text p {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    main .text img {
+        width: 120px;
+    }
+    .btn {
+        padding: 15px 23px;
+        font-size: 14px;
+    }
+    #sobre {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #sobre .container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sobre .dir {
+        width: 100%;
+        gap: 15px;
+        margin: 40px auto;
+        align-items: center;
+        text-align: center;
+    }
+    #sobre h1 {
+        font-size: 24px;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    #sobre li {
+        font-size: 12px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    #sobre .esq img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    #servicos {
+        height: auto;
+        padding: 20px;
+    }
+    #servicos h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #servicos .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #servicos .card {
+        width: 100%;
+        height: auto;
+        padding: 40px 30px;
+        align-items: left;
+        text-align: left;
+    }
+    #servicos .card h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+    #servicos .card p {
+        font-size: 14px;
+        text-align: left;
+    }
+    #mitos {
+        height: auto;
+        padding: 20px;
+        gap: 30px;
+    }
+    #mitos h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    #mitos .container {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #mitos .card {
+        width: 100%;
+        height: auto;
+        padding: 40px 30px;
+        align-items: left;
+        text-align: left;
+    }
+    #mitos .card .text {
+        flex-direction: column;
+        gap: 13px;
+    }
+    #mitos .card .text img {
+        width: 25px;
+    }
+    #mitos h2 {
+        font-size: 16px;
+    }
+    #mitos p {
+        font-size: 14px;
+    }
+    #resultados {
+        height: auto;
+        padding: 20px;
+    }
+    #resultados h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    #resultados p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    #resultados .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    #resultados .container img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #recon {
+        height: auto;
+        padding: 20px;
+    }
+    #recon h1 {
+        font-size: 24px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #recon .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    #recon .card {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+    }
+    #recon h3 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    #recon p {
+        font-size: 14px;
+    }
+    #frase {
+        height: auto;
+        padding: 20px;
+        margin: 15px auto;
+    }
+    #frase h1 {
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+    }
+    #faq {
+        padding: 20px;
+    }
+    #faq h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    #faq .faq-item {
+        width: 90%;
+        margin: 0px auto;
+    }
+    #faq .faq-question {
+        font-size: 14px;
+        padding: 10px;
+    }
+    #faq .faq-answer p {
+        font-size: 14px;
+        margin: 0;
+    }
+    #faq .arrow {
+        font-size: 10px;
+    }
+    #faq .faq-answer {
+        padding: 0 63px;
+    }
+    #faq .faq-answer p {
+        margin: -25px auto;
+        font-family: 'Regular';
+        color: var(--CorSecundaria);
+    }
+    #faq .arrow {
+        stroke-width: 1px;
+        font-family: 'Regular';
+        color: #6A4B3A;
+        font-size: 5px;
+        transition: transform 0.3s ease;
+    }
+    #faq .faq-item.open .faq-answer {
+        height: 100dvh;
+        padding: 25px 20px;
+    }
+    footer {
+        padding: 20px 10px;
+    }
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .logo {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    footer .social-media {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    footer .social-media a {
+        width: 35px;
+        height: 35px;
+    }
+    footer .social-media img {
+        width: 18px;
+    }
+    footer .developed-by {
+        font-size: 10px;
+        text-align: center;
+        width: auto;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    main {
+        background-image: url(../../images/background-mobile-innpele.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 100dvh;
+        padding: 50px 30px;
+    }
+    main .text {
+        width: 100%;
+        padding-left: 0;
+        gap: 15px;
+        justify-content: end;
+        align-items: center;
+    }
+    main .text h1 {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+    main .text p {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    main .text img {
+        width: 120px;
+    }
+    .btn {
+        padding: 15px 23px;
+        font-size: 14px;
+    }
+    #sobre {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #sobre .container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sobre .dir {
+        width: 90%;
+        gap: 15px;
+        margin: 40px auto;
+        align-items: center;
+        text-align: center;
+    }
+    #sobre h1 {
+        font-size: 24px;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    #sobre li {
+        font-size: 12px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    #sobre .esq img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    #servicos {
+        height: auto;
+        padding: 20px;
+    }
+    #servicos h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #servicos .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #servicos .card {
+        width: 80%;
+        height: auto;
+        padding: 40px 30px;
+        align-items: left;
+        text-align: left;
+    }
+    #servicos .card h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+    #servicos .card p {
+        font-size: 14px;
+        text-align: left;
+    }
+    #mitos {
+        height: auto;
+        padding: 20px;
+        gap: 30px;
+    }
+    #mitos h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    #mitos .container {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #mitos .card {
+        width: 90%;
+        height: auto;
+        padding: 40px 30px;
+        align-items: left;
+        text-align: left;
+    }
+    #mitos .card .text {
+        flex-direction: column;
+        gap: 13px;
+    }
+    #mitos .card .text img {
+        width: 25px;
+    }
+    #mitos h2 {
+        font-size: 16px;
+    }
+    #mitos p {
+        font-size: 14px;
+    }
+    #resultados {
+        height: auto;
+        padding: 20px;
+    }
+    #resultados h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    #resultados p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    #resultados .container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    #resultados .container img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #recon {
+        height: auto;
+        padding: 20px;
+    }
+    #recon h1 {
+        font-size: 24px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #recon .container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    #recon .card {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+    }
+    #recon h3 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    #recon p {
+        font-size: 14px;
+    }
+    #frase {
+        height: auto;
+        padding: 20px;
+        margin: 15px auto;
+    }
+    #frase h1 {
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+    }
+    #faq {
+        padding: 20px;
+    }
+    #faq h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    #faq .faq-item {
+        width: 90%;
+        margin: 0px auto;
+    }
+    #faq .faq-question {
+        font-size: 14px;
+        padding: 10px;
+    }
+    #faq .faq-answer p {
+        font-size: 14px;
+        margin: 0;
+    }
+    #faq .arrow {
+        font-size: 10px;
+    }
+    #faq .faq-answer {
+        padding: 0 63px;
+    }
+    #faq .faq-answer p {
+        margin: -25px auto;
+        font-family: 'Regular';
+        color: var(--CorSecundaria);
+    }
+    #faq .arrow {
+        stroke-width: 1px;
+        font-family: 'Regular';
+        color: #6A4B3A;
+        font-size: 5px;
+        transition: transform 0.3s ease;
+    }
+    #faq .faq-item.open .faq-answer {
+        height: 100dvh;
+        padding: 25px 20px;
+    }
+    footer {
+        padding: 20px 10px;
+    }
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .logo {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    footer .social-media {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    footer .social-media a {
+        width: 35px;
+        height: 35px;
+    }
+    footer .social-media img {
+        width: 18px;
+    }
+    footer .developed-by {
+        font-size: 10px;
+        text-align: center;
+        width: auto;
+    }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
     #faq .faq {
         grid-template-columns: 1fr;
@@ -588,8 +1110,14 @@ footer .developed-by a {
     
 }
 @media (min-width: 1400px){
+    main{
+        min-height: 85dvh;
+    }
     main .text{
         width: 1200px;
+    }
+    #sobre{
+        height: 75dvh;
     }
     #sobre .container{
         width: 1200px;
@@ -616,10 +1144,10 @@ footer .developed-by a {
         width: 600px;
     }
     #mitos{
-        height: 80dvh;
+        height: 70dvh;
     }
     #resultados{
-        height: 85dvh;
+        height: 80dvh;
     }
     #resultados .container{
         width: 1200px;
@@ -628,8 +1156,8 @@ footer .developed-by a {
         width: 95%;
     }
     #recon{
-        height: 50dvh;
-        margin: 0 auto;
+        height: 45dvh;
+        margin: 20px auto;
     }
     #recon .container{
         width: 1200px;
