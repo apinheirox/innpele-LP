@@ -11,14 +11,12 @@
     --CorVerdade: #6AB28D;
     --CorReforcos: #E7C7A0;
 }
-html{
+body, html{
     overflow-x: hidden;
 }
 body {
     background-color: white;
     height: 100%;
-    overflow-x: hidden;
-    overflow: scroll;
 }
 @font-face {
     font-family: 'Bold';
