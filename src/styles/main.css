@@ -582,13 +582,13 @@ footer .developed-by a {
 
 @media (max-width: 575.98px){
     main {
-        background-attachment: scroll;
         background-image: url(../../images/background-mobile-innpele-1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         justify-content: center;
         align-items: flex-end;
         min-height: 100dvh;
+        background-attachment: fixed;
         padding: 20px;
         padding-top: 150px;
     }
@@ -848,6 +848,7 @@ footer .developed-by a {
         background-repeat: no-repeat;
         background-size: cover;
         justify-content: center;
+        background-attachment: scroll;
         align-items: flex-end;
         min-height: 100dvh;
         padding: 50px 30px;
