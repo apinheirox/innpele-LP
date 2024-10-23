@@ -135,6 +135,12 @@ main .text img{
     width: 430px;
     margin-bottom: 10px;
 }
+#sobre ul{
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
 #sobre li{
     color: #8D5B3B;
     font-family: 'Regular';
