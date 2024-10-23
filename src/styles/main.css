@@ -1093,17 +1093,263 @@ footer .developed-by a {
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-    #faq .faq {
+    main {
+        background-image: url(../../images/background-tablet-innpele.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 100dvh;
+        padding: 150px 30px;
+    }
+    main .text {
+        width: 70%;
+        padding-left: 0;
+        gap: 15px;
+        justify-content: end;
+        align-items: center;
+    }
+    main .text h1 {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+    main .text p {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
+    main .text img {
+        width: 120px;
+    }
+    .btn {
+        padding: 15px 23px;
+        font-size: 14px;
+    }
+    #sobre {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #sobre .container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sobre .dir {
+        width: 85%;
+        gap: 15px;
+        margin: 40px auto;
+        align-items: center;
+        text-align: center;
+    }
+    #sobre h1 {
+        font-size: 24px;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    #sobre li {
+        font-size: 12px;
+        width: 70%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    #sobre .esq img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    #servicos {
+        height: auto;
+        padding: 20px;
+    }
+    #servicos h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #servicos .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #servicos .card {
+        width: 70%;
+        height: auto;
+        padding: 40px 30px;
+        align-items: left;
+        text-align: left;
+    }
+    #servicos .card h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+    #servicos .card p {
+        font-size: 14px;
+        text-align: left;
+    }
+    #mitos {
+        height: auto;
+        padding: 20px;
+        gap: 30px;
+    }
+    #mitos h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    #mitos .container {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #mitos .card {
+        width: 80%;
+        height: auto;
+        padding: 40px 30px;
+        align-items: left;
+        text-align: left;
+    }
+    #mitos .card .text {
+        flex-direction: column;
+        gap: 13px;
+    }
+    #mitos .card .text img {
+        width: 25px;
+    }
+    #mitos h2 {
+        font-size: 16px;
+    }
+    #mitos p {
+        font-size: 14px;
+    }
+    #resultados {
+        height: auto;
+        padding: 20px;
+    }
+    #resultados h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    #resultados p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    #resultados .container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    #resultados .container img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #recon {
+        height: auto;
+        padding: 20px;
+    }
+    #recon h1 {
+        font-size: 24px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #recon .container {
+        width: 90%;
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 15px;
     }
-
+    #recon .card {
+        width: 80%;
+        height: auto;
+        padding: 40px 20px;
+    }
+    #recon h3 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    #recon p {
+        font-size: 14px;
+    }
+    #frase {
+        height: auto;
+        padding: 20px;
+        margin: 15px auto;
+    }
+    #frase h1 {
+        font-size: 24px;
+        width: 80%;
+        margin: 0;
+    }
     #faq {
-        padding: 100px 10px;
+        padding: 20px;
     }
-
     #faq h1 {
-        font-size: 28px;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    #faq .faq-item {
+        width: 90%;
+        margin: 0px auto;
+    }
+    #faq .faq-question {
+        font-size: 14px;
+        padding: 10px;
+    }
+    #faq .faq-answer p {
+        font-size: 14px;
+        margin: 0;
+    }
+    #faq .arrow {
+        font-size: 10px;
+    }
+    #faq .faq-answer {
+        padding: 0 63px;
+    }
+    #faq .faq-answer p {
+        margin: -25px auto;
+        font-family: 'Regular';
+        color: var(--CorSecundaria);
+    }
+    #faq .arrow {
+        stroke-width: 1px;
+        font-family: 'Regular';
+        color: #6A4B3A;
+        font-size: 5px;
+        transition: transform 0.3s ease;
+    }
+    #faq .faq-item.open .faq-answer {
+        height: 100dvh;
+        padding: 25px 20px;
+    }
+    footer {
+        padding: 20px 10px;
+    }
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .logo {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    footer .social-media {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    footer .social-media a {
+        width: 35px;
+        height: 35px;
+    }
+    footer .social-media img {
+        width: 18px;
+    }
+    footer .developed-by {
+        font-size: 10px;
+        text-align: center;
+        width: auto;
     }
 }
 @media (min-width: 992px) and (max-width: 1199.98px){
