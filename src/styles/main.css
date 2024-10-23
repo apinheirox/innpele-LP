@@ -588,7 +588,7 @@ footer .developed-by a {
         justify-content: center;
         align-items: flex-end;
         min-height: 100dvh;
-        background-attachment: fixed;
+        background-attachment: scroll;
         padding: 20px;
         padding-top: 150px;
     }
